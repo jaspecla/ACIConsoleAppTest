@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31213.239
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACIConsoleAppTest", "ACIConsoleAppTest\ACIConsoleAppTest.csproj", "{07220147-7318-4BF7-B5A3-53D21380BA89}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{BDB555F9-52AB-41E9-AAFF-758685A448B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07220147-7318-4BF7-B5A3-53D21380BA89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07220147-7318-4BF7-B5A3-53D21380BA89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07220147-7318-4BF7-B5A3-53D21380BA89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07220147-7318-4BF7-B5A3-53D21380BA89}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3EE2E3BA-75B2-459E-AD33-8EC1B9826259}
+	EndGlobalSection
+EndGlobal
