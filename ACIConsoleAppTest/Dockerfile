@@ -2,4 +2,4 @@
 
 COPY bin/Release/net5.0/publish/ App/
 WORKDIR /App
-ENTRYPOINT ["dotnet", "ACIConsoleAppTest.dll", "10", "/var/log/aci"]
+ENTRYPOINT ["dotnet", "ACIConsoleAppTest.dll", "-1", "/var/log/aci"]
