@@ -45,6 +45,7 @@ jobs:
       # uses: docker/build-push-action@e1b7f96249f2e4c8e4ac1519b9608c0d48944a1f
       uses: docker/build-push-action@v2.4.0
       with:
+        file: 'ACIConsoleAppTest/Dockerfile'
         push: true
         # List of secrets to expose to the build (eg. key=string, GIT_AUTH_TOKEN=mytoken)
         tags: ${{ env.APPLICATION_NAME }}:latest, ${{ env.APPLICATION_NAME }}:${{ github.run_id }}
