@@ -21,15 +21,20 @@ namespace ACIConsoleAppTest
         path = Path.GetTempPath();
       }
 
-      var outputFileName = Path.Combine(path, "acitest.log");
+      // format the date/time in a sortable way, but one that's also acceptable for a filename
+      var today = DateTime.Now;
+      var formattedDateTime = today.ToString("s").Replace(':', '-');
 
-      Console.WriteLine($"Writing to file {outputFileName}");
+      var outputPath = Path.Combine(path, $"acitest.{formattedDateTime}.log");
 
-      using (StreamWriter outputFile = new StreamWriter(outputFileName))
+      Console.WriteLine($"Writing to file {outputPath}");
+
+      using (StreamWriter outputFile = new StreamWriter(outputPath))
       {
         while (max == -1 || counter < max)
         {
-          var output = $"Counter: {++counter}";
+          var timestamp = DateTime.Now;
+          var output = $"Counter: {++counter}: {timestamp.ToString("s")}";
 
           outputFile.WriteLine(output);
 
