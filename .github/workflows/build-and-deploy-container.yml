@@ -47,5 +47,4 @@ jobs:
       with:
         context: 'ACIConsoleAppTest/'
         push: true
-        # List of secrets to expose to the build (eg. key=string, GIT_AUTH_TOKEN=mytoken)
-        tags: ${{ env.APPLICATION_NAME }}:latest, ${{ env.APPLICATION_NAME }}:${{ github.run_id }}
+        tags: ${{ env.CONTAINER_REGISTRY}}/${{ env.APPLICATION_NAME }}:latest, ${{ env.CONTAINER_REGISTRY}}/${{ env.APPLICATION_NAME }}:${{ github.run_id }}
