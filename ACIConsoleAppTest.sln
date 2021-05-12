@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACIConsoleAppTest", "ACIConsoleAppTest\ACIConsoleAppTest.csproj", "{07220147-7318-4BF7-B5A3-53D21380BA89}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{BDB555F9-52AB-41E9-AAFF-758685A448B4}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\build-and-deploy-container.yml = .github\workflows\build-and-deploy-container.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
